@@ -740,9 +740,9 @@ function reject(reason) {
     }, reason, true);
 
     // Note that the reason has not been handled.
-    displayUnhandledReasons();
     unhandledRejections.push(rejection);
     unhandledReasons.push(reason);
+    displayUnhandledReasons();
 
     return rejection;
 }
